@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>물품보관함 관리 시스템</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#goClientMain").click(function(){
+				location.href = "/clientMain"
+			});
+			$("#goAdminPage").click(function(){
+				
+			});
+		});
+	</script>
+</head>
+<body>
+    <h3>물품보관함 관리 시스템</h3>
+    <p class="lead">물품보관함을 이용할 수 있는 서비스와 관리하는 기능을 제공하는 시스템입니다</p> 
+    <button type="button" class="btn btn-success btn-lg" id="goClientMain">Go to Client Page</button> &nbsp;&nbsp;
+    <button type="button" class="btn btn-danger btn-lg" id="goAdminPage">Go to Admin Page</button>
+
+    <br><br><br><br><br><br>
+    <h5>서비스 이용 가격 안내</h5>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col" style="font-size: 2rem;">항목</th>
+            <th scope="col">
+                기본 4시간(h)<br>
+                시작 ~ 4시간 이내
+            </th>
+            <th scope="col">
+                    추가 4시간(h)<br>
+                    4시간 ~ 8시간 이내
+            </th>
+            <th scope="col">
+                    추가 4시간(h)<br>
+                    8시간 ~ 12시간 이내
+            </th>
+            <th scope="col">
+                    추가 12시간 반복<br>
+                    12시간 이후 12시간마다
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" style="font-size: 1.5rem;">소 형</th>
+                <td style="font-size: 1.5rem;">2,000원</td>
+                <td style="font-size: 1.5rem;">2,000원</td>
+                <td style="font-size: 1.5rem;">2,000원</td>
+                <td style="font-size: 1.5rem;">2,000원</td>
+            </tr>
+            <tr>
+                <th scope="row" style="font-size: 1.5rem;">중 형</th>
+                <td style="font-size: 1.5rem;">3,000원</td>
+                <td style="font-size: 1.5rem;">3,000원</td>
+                <td style="font-size: 1.5rem;">3,000원</td>
+                <td style="font-size: 1.5rem;">3,000원</td>
+            </tr>
+            <tr>
+                <th scope="row" style="font-size: 1.5rem;">대 형</th>
+                <td style="font-size: 1.5rem;">4,000원</td>
+                <td style="font-size: 1.5rem;">4,000원</td>
+                <td style="font-size: 1.5rem;">4,000원</td>
+                <td style="font-size: 1.5rem;">4,000원</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br><br>
+    <h5>물품보관함 관리 시스템 규정</h5>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            1. 1회 이용 보관함으로 찾기를 하면 이용이 종료됩니다.
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            2. 기본시간 내에 찾을 경우 추가요금이 없습니다.
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            3. 기본시간 이후부터는 추가시간 단위로 추가요금이 계속하여 징수됩니다.
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            4. 보관 후 3일이 지난 경우 관제센터로 물품이 이송되며 이 때부터는 요금과 서비스가 센터로 이관됩니다.
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>물품보관함 관리 시스템</title>
+   <link rel="stylesheet" href="/static/css/bootstrap.css">
+  
+</head>
+<body>
+    <h1 style="text-align: center;">관리자 페이지</h1>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col" style="border-right: 2px solid white;">
+
+            <div style="margin: 0px 50px 20px 50px;">
+                <h2>보관함 현황 <small class="text-muted">이용 중 : / 이용 가능 : / 회수 필요 : </small></h2>
+                <div class="row" style="width: 600px; height: 60px; margin-left: 5px;">
+                    <div class="col" style="border: 1px solid black; background-color: red;">1</div>
+                    <div class="col" style="border: 1px solid black; background-color: gray;">2</div>
+                    <div class="col" style="border: 1px solid black; background-color: gray;">3</div>
+                    <div class="col" style="border: 1px solid black;">4</div>
+                    <div class="col" style="border: 1px solid black;">5</div>
+                    <div class="col" style="border: 1px solid black;">6</div>
+                    <div class="col" style="border: 1px solid black;">7</div>
+                    <div class="col" style="border: 1px solid black;">8</div>
+                    <div class="col" style="border: 1px solid black;">9</div>
+                    <div class="col" style="border: 1px solid black;">10</div>
+                </div>
+                <div class="row" style="width: 600px; height: 60px; margin-left: 5px;">
+                    <div class="col" style="border: 1px solid black;">11</div>
+                    <div class="col" style="border: 1px solid black;">12</div>
+                    <div class="col" style="border: 1px solid black;">13</div>
+                    <div class="col" style="border: 1px solid black;">14</div>
+                    <div class="col" style="border: 1px solid black;">15</div>
+                    <div class="col" style="border: 1px solid black;">16</div>
+                </div>
+                <div class="row" style="width: 600px; height: 120px; margin-left: 5px;">
+                    <div class="col" style="border: 1px solid black;">17</div>
+                    <div class="col" style="border: 1px solid black;">18</div>
+                    <div class="col" style="border: 1px solid black;">19</div>
+                    <div class="col" style="border: 1px solid black;">20</div>
+                    <div class="col" style="border: 1px solid black;">21</div>
+                    <div class="col" style="border: 1px solid black;">22</div>
+                    <div class="col" style="border: 1px solid black;">23</div>
+                    <div class="col" style="border: 1px solid black;">24</div>
+                    <div class="col" style="border: 1px solid black;">25</div>
+                    <div class="col" style="border: 1px solid black;">26</div>
+                </div>
+            </div>
+            <div class="progress" style="margin-left: 55px; margin-right: 70px; height: 30px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 30%; font-size: 15px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">이용 가능</div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 30%; font-size: 15px;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">이용 중</div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%; font-size: 15px;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">회수 필요</div>
+            </div>
+
+            <div style="margin: 70px 70px 0px 55px;">
+                <h2>회수 물품 관리</h2>
+                <p>3일이 지난 물품은 한번에 회수합니다. 회수한 물품은 센터로 이관됩니다. 해당 버튼은 센터로 이관한 이후 누르세요.</p>
+                <button type="button" class="btn btn-lg btn-block btn-danger">필히 센터로 이관 후 누르세요</button>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h2>이용 통계</h2>
+                </div>
+                <div class="col">
+                    기간 선택 : <input type="date" value="2019-09-22" min="2019-09-10" max="2019-09-25"> - <input type="date" value="2019-09-22" min="2019-09-10" max="2019-09-25">
+                    <button type="button" class="btn btn-sm btn-secondary" >검색</button>
+                </div>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">분류</th>
+                        <th scope="col">이용 금액 합계</th>
+                        <th scope="col">사용률</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <th scope="row">전체</th>
+                        <td>10000</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr class="table-active">
+                        <th scope="row">소형</th>
+                        <td>3000</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr class="table-active">
+                        <th scope="row">중형</th>
+                        <td>3000</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr class="table-active">
+                        <th scope="row">대형</th>
+                        <td>4000</td>
+                        <td>40%</td>
+                    </tr>
+                </tbody>
+            </table>           
+        </div>
+    </div>
+
+
+</body>
+</html>
